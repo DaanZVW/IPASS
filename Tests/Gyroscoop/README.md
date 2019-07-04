@@ -1,1 +1,1 @@
-## This will test the gyroscope of both modules invidualy
+## This will test the gyroscope of both modules individually
