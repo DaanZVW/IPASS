@@ -1,0 +1,65 @@
+\hypertarget{classmcbelib_1_1snake}{}\section{mcbelib\+:\+:snake Class Reference}
+\label{classmcbelib_1_1snake}\index{mcbelib\+::snake@{mcbelib\+::snake}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmcbelib_1_1snake_a6619e1f14c07f6092f108f8562d8cb17}\label{classmcbelib_1_1snake_a6619e1f14c07f6092f108f8562d8cb17}} 
+{\bfseries snake} (hwlib\+::window \&display, hwlib\+::pin\+\_\+in \&start\+\_\+pin, hwlib\+::pin\+\_\+in \&reset\+\_\+pin, \hyperlink{classmcbelib_1_1gy521}{mcbelib\+::gy521} \&chip, mcbel ib\+::hc05 \&bluetooth, bool accept\+\_\+bluetooth=true)
+\item 
+void \hyperlink{classmcbelib_1_1snake_afdeaee89ca2cfeefc60db77b3101ccf0}{move\+Player} (const int \&directionX, const int \&directionY)
+\begin{DoxyCompactList}\small\item\em Move the playerhead. \end{DoxyCompactList}\item 
+void \hyperlink{classmcbelib_1_1snake_af3720fcb7cf33fd3e362815824f854ee}{setup} ()
+\begin{DoxyCompactList}\small\item\em Setup the snake. \end{DoxyCompactList}\item 
+void \hyperlink{classmcbelib_1_1snake_a6e19643fe81ca8098975a22beebf77c1}{home\+Screen} ()
+\begin{DoxyCompactList}\small\item\em Show homescreen. \end{DoxyCompactList}\item 
+void \hyperlink{classmcbelib_1_1snake_aae04f6565a52ea47decf35f41b7b53b4}{start} ()
+\begin{DoxyCompactList}\small\item\em Main start function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmcbelib_1_1snake_a6e19643fe81ca8098975a22beebf77c1}\label{classmcbelib_1_1snake_a6e19643fe81ca8098975a22beebf77c1}} 
+\index{mcbelib\+::snake@{mcbelib\+::snake}!home\+Screen@{home\+Screen}}
+\index{home\+Screen@{home\+Screen}!mcbelib\+::snake@{mcbelib\+::snake}}
+\subsubsection{\texorpdfstring{home\+Screen()}{homeScreen()}}
+{\footnotesize\ttfamily void mcbelib\+::snake\+::home\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Show homescreen. 
+
+The homescreen will be made onto the screen and will wait until start is pressed \mbox{\Hypertarget{classmcbelib_1_1snake_afdeaee89ca2cfeefc60db77b3101ccf0}\label{classmcbelib_1_1snake_afdeaee89ca2cfeefc60db77b3101ccf0}} 
+\index{mcbelib\+::snake@{mcbelib\+::snake}!move\+Player@{move\+Player}}
+\index{move\+Player@{move\+Player}!mcbelib\+::snake@{mcbelib\+::snake}}
+\subsubsection{\texorpdfstring{move\+Player()}{movePlayer()}}
+{\footnotesize\ttfamily void mcbelib\+::snake\+::move\+Player (\begin{DoxyParamCaption}\item[{const int \&}]{directionX,  }\item[{const int \&}]{directionY }\end{DoxyParamCaption})}
+
+
+
+Move the playerhead. 
+
+This will change the snake and after that will sync the screen \mbox{\Hypertarget{classmcbelib_1_1snake_af3720fcb7cf33fd3e362815824f854ee}\label{classmcbelib_1_1snake_af3720fcb7cf33fd3e362815824f854ee}} 
+\index{mcbelib\+::snake@{mcbelib\+::snake}!setup@{setup}}
+\index{setup@{setup}!mcbelib\+::snake@{mcbelib\+::snake}}
+\subsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void mcbelib\+::snake\+::setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Setup the snake. 
+
+This function will setup the snake so it will be seen on screen \mbox{\Hypertarget{classmcbelib_1_1snake_aae04f6565a52ea47decf35f41b7b53b4}\label{classmcbelib_1_1snake_aae04f6565a52ea47decf35f41b7b53b4}} 
+\index{mcbelib\+::snake@{mcbelib\+::snake}!start@{start}}
+\index{start@{start}!mcbelib\+::snake@{mcbelib\+::snake}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void mcbelib\+::snake\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main start function. 
+
+This function will start the bluetooth function if accept\+\_\+bluetooth is true, if not it will use the internal resources to play the game 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mcbelib.\+hpp\item 
+snake.\+cpp\end{DoxyCompactItemize}

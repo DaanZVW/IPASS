@@ -1,0 +1,139 @@
+\hypertarget{classmcbelib_1_1gy521}{}\section{mcbelib\+:\+:gy521 Class Reference}
+\label{classmcbelib_1_1gy521}\index{mcbelib\+::gy521@{mcbelib\+::gy521}}
+
+
+G\+Y-\/521 (gyroscoop) class.  
+
+
+
+
+{\ttfamily \#include $<$mcbelib.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmcbelib_1_1gy521_a326ed53b38fcbf3d9e87a5f722bf1d57}\label{classmcbelib_1_1gy521_a326ed53b38fcbf3d9e87a5f722bf1d57}} 
+{\bfseries gy521} (hwlib\+::i2c\+\_\+bus \&bus, uint8\+\_\+t address=G\+Y\+R\+O\+\_\+\+A\+D\+D\+R\+E\+SS, int calibrate\+Accel=1, int calibrate\+Gyro=1)
+\item 
+void \hyperlink{classmcbelib_1_1gy521_a3d894d6a553ab6ed660886c349f2f7bf}{activate} ()
+\begin{DoxyCompactList}\small\item\em Turn the clock register on. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{classmcbelib_1_1gy521_a65218b1467163b223d091ab309133b8c}{get\+AccelX} ()
+\begin{DoxyCompactList}\small\item\em Read accelerometer value X. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{classmcbelib_1_1gy521_a57711c636f4541aa442cac6fd9539666}{get\+AccelY} ()
+\begin{DoxyCompactList}\small\item\em Read accelerometer value Y. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{classmcbelib_1_1gy521_ad4b00d9882416e17a518b121c3f46b11}{get\+AccelZ} ()
+\begin{DoxyCompactList}\small\item\em Read accelerometer value Z. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{classmcbelib_1_1gy521_a1145cda6295287a6cda950c156bcf0d9}{get\+GyroX} ()
+\begin{DoxyCompactList}\small\item\em Read gyroscope value X. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{classmcbelib_1_1gy521_a8b9cec4004f71c70c3a14b5f6fbf9e4d}{get\+GyroY} ()
+\begin{DoxyCompactList}\small\item\em Read gyroscope value Y. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{classmcbelib_1_1gy521_a197222a217acdbf8260e9495120497a0}{get\+GyroZ} ()
+\begin{DoxyCompactList}\small\item\em Read gyroscope value Z. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{classmcbelib_1_1gy521_abb1275aa14cf35844900e91fded2bad0}{get\+Temperature} ()
+\begin{DoxyCompactList}\small\item\em Read temperature. \end{DoxyCompactList}\item 
+char \hyperlink{classmcbelib_1_1gy521_af0d109f92f90dd9c4ae28c6fdacd9a88}{get\+Way\+Pointing} (bool convertX=false, bool convertY=false)
+\begin{DoxyCompactList}\small\item\em Read where controller is facing to to. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+G\+Y-\/521 (gyroscoop) class. 
+
+Deze class is voor de interface van de gyroscoop chip 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmcbelib_1_1gy521_a3d894d6a553ab6ed660886c349f2f7bf}\label{classmcbelib_1_1gy521_a3d894d6a553ab6ed660886c349f2f7bf}} 
+\index{mcbelib\+::gy521@{mcbelib\+::gy521}!activate@{activate}}
+\index{activate@{activate}!mcbelib\+::gy521@{mcbelib\+::gy521}}
+\subsubsection{\texorpdfstring{activate()}{activate()}}
+{\footnotesize\ttfamily void mcbelib\+::gy521\+::activate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Turn the clock register on. 
+
+Sets the clock register to 0, this has function has to be called to acces the chip \mbox{\Hypertarget{classmcbelib_1_1gy521_a65218b1467163b223d091ab309133b8c}\label{classmcbelib_1_1gy521_a65218b1467163b223d091ab309133b8c}} 
+\index{mcbelib\+::gy521@{mcbelib\+::gy521}!get\+AccelX@{get\+AccelX}}
+\index{get\+AccelX@{get\+AccelX}!mcbelib\+::gy521@{mcbelib\+::gy521}}
+\subsubsection{\texorpdfstring{get\+Accel\+X()}{getAccelX()}}
+{\footnotesize\ttfamily int16\+\_\+t mcbelib\+::gy521\+::get\+AccelX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read accelerometer value X. 
+
+Returns the full data of the X-\/axis \mbox{\Hypertarget{classmcbelib_1_1gy521_a57711c636f4541aa442cac6fd9539666}\label{classmcbelib_1_1gy521_a57711c636f4541aa442cac6fd9539666}} 
+\index{mcbelib\+::gy521@{mcbelib\+::gy521}!get\+AccelY@{get\+AccelY}}
+\index{get\+AccelY@{get\+AccelY}!mcbelib\+::gy521@{mcbelib\+::gy521}}
+\subsubsection{\texorpdfstring{get\+Accel\+Y()}{getAccelY()}}
+{\footnotesize\ttfamily int16\+\_\+t mcbelib\+::gy521\+::get\+AccelY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read accelerometer value Y. 
+
+Returns the full data of the Y-\/axis \mbox{\Hypertarget{classmcbelib_1_1gy521_ad4b00d9882416e17a518b121c3f46b11}\label{classmcbelib_1_1gy521_ad4b00d9882416e17a518b121c3f46b11}} 
+\index{mcbelib\+::gy521@{mcbelib\+::gy521}!get\+AccelZ@{get\+AccelZ}}
+\index{get\+AccelZ@{get\+AccelZ}!mcbelib\+::gy521@{mcbelib\+::gy521}}
+\subsubsection{\texorpdfstring{get\+Accel\+Z()}{getAccelZ()}}
+{\footnotesize\ttfamily int16\+\_\+t mcbelib\+::gy521\+::get\+AccelZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read accelerometer value Z. 
+
+Returns the full data of the Z-\/axis \mbox{\Hypertarget{classmcbelib_1_1gy521_a1145cda6295287a6cda950c156bcf0d9}\label{classmcbelib_1_1gy521_a1145cda6295287a6cda950c156bcf0d9}} 
+\index{mcbelib\+::gy521@{mcbelib\+::gy521}!get\+GyroX@{get\+GyroX}}
+\index{get\+GyroX@{get\+GyroX}!mcbelib\+::gy521@{mcbelib\+::gy521}}
+\subsubsection{\texorpdfstring{get\+Gyro\+X()}{getGyroX()}}
+{\footnotesize\ttfamily int16\+\_\+t mcbelib\+::gy521\+::get\+GyroX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read gyroscope value X. 
+
+Returns the full data of the X-\/axis \mbox{\Hypertarget{classmcbelib_1_1gy521_a8b9cec4004f71c70c3a14b5f6fbf9e4d}\label{classmcbelib_1_1gy521_a8b9cec4004f71c70c3a14b5f6fbf9e4d}} 
+\index{mcbelib\+::gy521@{mcbelib\+::gy521}!get\+GyroY@{get\+GyroY}}
+\index{get\+GyroY@{get\+GyroY}!mcbelib\+::gy521@{mcbelib\+::gy521}}
+\subsubsection{\texorpdfstring{get\+Gyro\+Y()}{getGyroY()}}
+{\footnotesize\ttfamily int16\+\_\+t mcbelib\+::gy521\+::get\+GyroY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read gyroscope value Y. 
+
+Returns the full data of the Y-\/axis \mbox{\Hypertarget{classmcbelib_1_1gy521_a197222a217acdbf8260e9495120497a0}\label{classmcbelib_1_1gy521_a197222a217acdbf8260e9495120497a0}} 
+\index{mcbelib\+::gy521@{mcbelib\+::gy521}!get\+GyroZ@{get\+GyroZ}}
+\index{get\+GyroZ@{get\+GyroZ}!mcbelib\+::gy521@{mcbelib\+::gy521}}
+\subsubsection{\texorpdfstring{get\+Gyro\+Z()}{getGyroZ()}}
+{\footnotesize\ttfamily int16\+\_\+t mcbelib\+::gy521\+::get\+GyroZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read gyroscope value Z. 
+
+Returns the full data of the Z-\/axis \mbox{\Hypertarget{classmcbelib_1_1gy521_abb1275aa14cf35844900e91fded2bad0}\label{classmcbelib_1_1gy521_abb1275aa14cf35844900e91fded2bad0}} 
+\index{mcbelib\+::gy521@{mcbelib\+::gy521}!get\+Temperature@{get\+Temperature}}
+\index{get\+Temperature@{get\+Temperature}!mcbelib\+::gy521@{mcbelib\+::gy521}}
+\subsubsection{\texorpdfstring{get\+Temperature()}{getTemperature()}}
+{\footnotesize\ttfamily int16\+\_\+t mcbelib\+::gy521\+::get\+Temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read temperature. 
+
+Returns the full data of the temperature sensor \mbox{\Hypertarget{classmcbelib_1_1gy521_af0d109f92f90dd9c4ae28c6fdacd9a88}\label{classmcbelib_1_1gy521_af0d109f92f90dd9c4ae28c6fdacd9a88}} 
+\index{mcbelib\+::gy521@{mcbelib\+::gy521}!get\+Way\+Pointing@{get\+Way\+Pointing}}
+\index{get\+Way\+Pointing@{get\+Way\+Pointing}!mcbelib\+::gy521@{mcbelib\+::gy521}}
+\subsubsection{\texorpdfstring{get\+Way\+Pointing()}{getWayPointing()}}
+{\footnotesize\ttfamily char mcbelib\+::gy521\+::get\+Way\+Pointing (\begin{DoxyParamCaption}\item[{bool}]{convertX = {\ttfamily false},  }\item[{bool}]{convertY = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Read where controller is facing to to. 
+
+Returns an char with the direction the controller is facing to, only used in the H\+C-\/05 Class 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mcbelib.\+hpp\item 
+gy521.\+cpp\end{DoxyCompactItemize}

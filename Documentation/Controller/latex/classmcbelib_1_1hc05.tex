@@ -1,0 +1,82 @@
+\hypertarget{classmcbelib_1_1hc05}{}\section{mcbelib\+:\+:hc05 Class Reference}
+\label{classmcbelib_1_1hc05}\index{mcbelib\+::hc05@{mcbelib\+::hc05}}
+
+
+H\+C-\/05 (bluetooth) class.  
+
+
+
+
+{\ttfamily \#include $<$mcbelib.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmcbelib_1_1hc05_a9b8b3ebb03d63ad2857a789b97c2577e}\label{classmcbelib_1_1hc05_a9b8b3ebb03d63ad2857a789b97c2577e}} 
+{\bfseries hc05} (hwlib\+::pin\+\_\+in \&pin\+\_\+in, hwlib\+::pin\+\_\+out \&pin\+\_\+out, hwlib\+::pin\+\_\+in \&pin\+\_\+state, hwlib\+::pin\+\_\+in \&start, hwlib\+::pin\+\_\+in \&reset, bool active\+\_\+connection=false, int baudrate=4800)
+\item 
+void \hyperlink{classmcbelib_1_1hc05_a48d294a72ba90a9cd6573da553fc7823}{connection\+Check} ()
+\begin{DoxyCompactList}\small\item\em Check the Bluetooth connection. \end{DoxyCompactList}\item 
+void \hyperlink{classmcbelib_1_1hc05_a3cd0be8d16a5eb990216b41e533b815c}{write\+String} (char $\ast$characters, int size=1)
+\begin{DoxyCompactList}\small\item\em Write a string over bluetooth. \end{DoxyCompactList}\item 
+void \hyperlink{classmcbelib_1_1hc05_a4786907ca61b495eb7a7453f8787286e}{read\+String} (char $\ast$characters, int size=1)
+\begin{DoxyCompactList}\small\item\em Read a string over bluetooth. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmcbelib_1_1hc05_a718bad3e6b82582a0eb4ba5ca036b361}\label{classmcbelib_1_1hc05_a718bad3e6b82582a0eb4ba5ca036b361}} 
+char {\bfseries read\+Data} ()
+\item 
+void \hyperlink{classmcbelib_1_1hc05_ab8e13647d668978bd77654b39572008d}{send\+Data} (\hyperlink{classmcbelib_1_1gy521}{gy521} \&chip)
+\begin{DoxyCompactList}\small\item\em Write a char over bluetooth for controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+C-\/05 (bluetooth) class. 
+
+Deze class is voor de interface van de bluetooth chip 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmcbelib_1_1hc05_a48d294a72ba90a9cd6573da553fc7823}\label{classmcbelib_1_1hc05_a48d294a72ba90a9cd6573da553fc7823}} 
+\index{mcbelib\+::hc05@{mcbelib\+::hc05}!connection\+Check@{connection\+Check}}
+\index{connection\+Check@{connection\+Check}!mcbelib\+::hc05@{mcbelib\+::hc05}}
+\subsubsection{\texorpdfstring{connection\+Check()}{connectionCheck()}}
+{\footnotesize\ttfamily void mcbelib\+::hc05\+::connection\+Check (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check the Bluetooth connection. 
+
+Check the state pin and set bool active\+\_\+connection on to give acces to all the commands, this function has to be called before other functions will be available \mbox{\Hypertarget{classmcbelib_1_1hc05_a4786907ca61b495eb7a7453f8787286e}\label{classmcbelib_1_1hc05_a4786907ca61b495eb7a7453f8787286e}} 
+\index{mcbelib\+::hc05@{mcbelib\+::hc05}!read\+String@{read\+String}}
+\index{read\+String@{read\+String}!mcbelib\+::hc05@{mcbelib\+::hc05}}
+\subsubsection{\texorpdfstring{read\+String()}{readString()}}
+{\footnotesize\ttfamily void mcbelib\+::hc05\+::read\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{characters,  }\item[{int}]{size = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Read a string over bluetooth. 
+
+Read a string over the bus by giving it an (empty) array and the size of the string \mbox{\Hypertarget{classmcbelib_1_1hc05_ab8e13647d668978bd77654b39572008d}\label{classmcbelib_1_1hc05_ab8e13647d668978bd77654b39572008d}} 
+\index{mcbelib\+::hc05@{mcbelib\+::hc05}!send\+Data@{send\+Data}}
+\index{send\+Data@{send\+Data}!mcbelib\+::hc05@{mcbelib\+::hc05}}
+\subsubsection{\texorpdfstring{send\+Data()}{sendData()}}
+{\footnotesize\ttfamily void mcbelib\+::hc05\+::send\+Data (\begin{DoxyParamCaption}\item[{\hyperlink{classmcbelib_1_1gy521}{gy521} \&}]{chip }\end{DoxyParamCaption})}
+
+
+
+Write a char over bluetooth for controller. 
+
+Write a char over the bus by getting the data from the gyroscope and sending them constantly over the bluetooth connection \mbox{\Hypertarget{classmcbelib_1_1hc05_a3cd0be8d16a5eb990216b41e533b815c}\label{classmcbelib_1_1hc05_a3cd0be8d16a5eb990216b41e533b815c}} 
+\index{mcbelib\+::hc05@{mcbelib\+::hc05}!write\+String@{write\+String}}
+\index{write\+String@{write\+String}!mcbelib\+::hc05@{mcbelib\+::hc05}}
+\subsubsection{\texorpdfstring{write\+String()}{writeString()}}
+{\footnotesize\ttfamily void mcbelib\+::hc05\+::write\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{characters,  }\item[{int}]{size = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Write a string over bluetooth. 
+
+Write a string over the bus by giving it an array with chars and size of the array 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mcbelib.\+hpp\item 
+hc05.\+cpp\end{DoxyCompactItemize}

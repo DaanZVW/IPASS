@@ -330,7 +330,7 @@ namespace mcbelib {
         for(;;){
             char data = bluetooth.readData();
             bool start_button = (data & (1 << 3)) > 0;
-            if(start_button && (data & (1 << 1)) > 0 &&(data & (1 << 0)) > 0) {
+            if(start_button && (data & (1 << 1)) == 0 &&(data & (1 << 0)) == 0) {
                 break;
             }
             hwlib::wait_ms(50);
@@ -386,7 +386,7 @@ namespace mcbelib {
                     syncSnake();
                     break;
                 }                
-                movePlayer( moveY_decoded - moveY_decoded * 2, moveX_decoded - moveX_decoded * 2 );
+                movePlayer( moveY_decoded - moveY_decoded * 2, moveX_decoded );
             }
         }       
     }
@@ -458,11 +458,10 @@ namespace mcbelib {
      */
     void snake::start() {
         if (accept_bluetooth) {
-            bluetooth.connectionCheck();
+            //bluetooth.connectionCheck();
             extractPackageStart();
         }
 
-        chip.activate();
         for (;;) {
             homeScreen();
             setup();
@@ -477,7 +476,7 @@ namespace mcbelib {
                 }
                 int accelX = chip.getAccelX();
                 int accelY = chip.getAccelY();
-                movePlayer( accelY, accelX - accelX * 2 );
+                movePlayer( accelY, accelX );
             }
         }
     }

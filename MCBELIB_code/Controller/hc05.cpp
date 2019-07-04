@@ -75,6 +75,7 @@ namespace mcbelib {
                 active_connection = true;
                 break;
             }
+            //hwlib::cout << "check";
             hwlib::wait_ms(200); 
         }
     }

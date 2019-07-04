@@ -25,12 +25,16 @@ int main( void ) {
    auto slaveState   = target::pin_in( target::pins::d4);
    auto start        = target::pin_in( target::pins::d7);
    auto reset        = target::pin_in( target::pins::d8);
-   auto slave        = mcbelib::hc05( slavePin_in, slavePin_out, slaveState, start, reset );
+   auto slave        = mcbelib::hc05( slavePin_in, slavePin_out, slaveState, start, reset, true );
 
+   
    //activate gyroscope
    chip.activate();
    //activate connection
-   slave.connectionCheck();
+   //slave.connectionCheck();
+
+   //wait 10 seconds before sending data
+   hwlib::wait_ms(10000);
    //send the data continuously
    slave.sendData( chip );
 }

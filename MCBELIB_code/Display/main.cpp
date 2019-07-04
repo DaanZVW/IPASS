@@ -22,7 +22,7 @@ int main( void ) {
    auto masterPin_in  = target::pin_in( target::pins::d28);
    auto masterPin_out = target::pin_out( target::pins::d30);
    auto masterState   = target::pin_in( target::pins::d32);
-   auto master        = mcbelib::hc05( masterPin_in, masterPin_out, masterState );
+   auto master        = mcbelib::hc05( masterPin_in, masterPin_out, masterState, true );
 
    //game
    auto scl_game = target::pin_oc( target::pins::d19 );
@@ -32,6 +32,11 @@ int main( void ) {
    auto game_bus = hwlib::i2c_bus_bit_banged_scl_sda( scl_game, sda_game );
    auto setup    = hwlib::glcd_oled( game_bus, DISPLAY_ADDRESS );
    auto game     = mcbelib::snake( setup, start, reset, chip, master, true );
-
+   
+   //activate the gyroscope
+   chip.activate();
+   //wait 10 seconds before starting the game
+   hwlib::wait_ms(10000);
+   //start the game
    game.start();
 }
